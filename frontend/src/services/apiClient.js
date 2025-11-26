@@ -1,7 +1,7 @@
 // Client de API preparado para alternar entre Mock e HTTP real
 import { pessoasApi as pessoasMock, classificacaoApi as classificacaoMock, movimentoApi as movimentoMock } from './mockApi';
 
-const baseURL = import.meta?.env?.VITE_API_URL || 'http://localhost:3001/api';
+const baseURL = import.meta?.env?.VITE_API_URL || 'http://localhost:3001/api' || 'https://projeto-pratica-delta.vercel.app/' ;
 
 // Alternar entre mock e HTTP real.
 // Sem .env, usamos REAL por padrão (mock desativado).
