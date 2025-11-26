@@ -74,7 +74,7 @@ export default function ExtractionPage() {
     formData.append('invoicePDF', selectedFile);
 
     try {
-      const response = await fetch('http://localhost:3001/api/extract-data', {
+      const response = await fetch('https://projeto-pratica.onrender.com/api/extract-data', {
         method: 'POST',
         body: formData,
       });
