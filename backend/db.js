@@ -1,7 +1,7 @@
 require('dotenv').config();
 const { Pool } = require('pg');
 
-const connectionString = process.env.DATABASE_URL || `postgres://postgres:postgres@localhost:5432/projeto_adm`;
+const connectionString = process.env.DATABASE_URL || `postgresql://extrair_dados_postgres_user:aH7KKavYK6t1dVR7U9B8wrkenMI7BPaP@dpg-d4jlkinpm1nc738vu0ag-a/extrair_dados_postgres`;
 
 const pool = new Pool({ connectionString });
 
